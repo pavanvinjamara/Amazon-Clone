@@ -1,16 +1,31 @@
 import React from "react";
 import "./Home.css";
 import Product from "./Product";
+import Slider from 'react-animated-slider';
+import 'react-animated-slider/build/horizontal.css';
+import bg1 from "./assets/amazon1bg.jpg";
+// import bg2 from "./assets/amazon.jpeg";
+
 
 function Home() {
+  const slides = [
+    
+    { 
+      
+      title: 'https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg'},
+    { title: bg1},
+    {title: 'https://www.shutterstock.com/image-illustration/home-appliances-gas-cooker-tv-600w-289191653.jpg'}
+  ];
   return (
     <div className="home">
       <div className="home__container">
-        <img
-          className="home__image"
-          src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
-          alt=""
-        />
+      <Slider animateIn= "left">
+        {slides.map((slide, index) => <div key={index}>
+          <img src={slide.title} className="home__image" />
+          
+        </div>)}
+      </Slider>
+        
 
         <div className="home__row">
           <Product
