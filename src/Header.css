@@ -67,3 +67,22 @@
     margin-right: 10px;
     color: white;
   }
+
+  @media screen and (max-width: 690px) {
+    *,.header,.header__nav{
+      margin: 0;
+    }
+    .header__nav{
+      position: absolute;
+      bottom: -102vh;
+      padding: 20px;
+      width: 100%;
+      background-color: #131921;
+
+
+    }
+    .header__search{
+      padding-right: 10px;
+    }
+    
+  }
