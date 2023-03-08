@@ -17,18 +17,22 @@ function Home() {
     <div className="home">
       <div className="home__container">
       <Carousel showThumbs={false} autoPlay={true} transitionTime={3} infiniteLoop={true} showStatus={false}>
-      
       <div className='Banner'>
-          <img className="Bannerimg" src={reactLogo1} />
+          <img  className="Bannerimg"  src={reactLogo2} />
           
       </div>
+     
 
       <div className='Banner'>
           <img className="Bannerimg" src={bg1} />
           
       </div>
       <div className='Banner'>
-          <img  className="Bannerimg"  src={reactLogo2} />
+          <img className="Bannerimg" src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg" />
+          
+      </div>
+      <div className='Banner'>
+          <img className="Bannerimg" src={reactLogo1} />
           
       </div>
       <div className='Banner'>
